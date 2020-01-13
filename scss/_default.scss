@@ -1,0 +1,21 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(54, 54, 107);
+    font-size: 1.6em;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 40px auto;
+
+}
