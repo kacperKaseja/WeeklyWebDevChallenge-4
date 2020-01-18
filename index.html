@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WeeklyWebChallenge-4</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <button class="header__hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <nav class="header__navigation">
+                <button class="navigation__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="navigation__list">
                     <li class="navigation__list-item">Home</li>
                     <li class="navigation__list-item">Store</li>
@@ -28,15 +29,40 @@
                 </ul>
             </nav>
             <div class="header__search">
-                <input type="text" name="" id="">
+                <input class="header__search-input" type="text" name="search" id="search">
+                <label for="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16.028" height="16.026" viewBox="0 0 16.028 16.026">
+                        <path id="Search_icon" data-name="Search icon"
+                            d="M842.728,143.309l-3.942-3.921a6.449,6.449,0,0,0,1.3-3.884,6.546,6.546,0,1,0-2.738,5.289l3.955,3.933a1.011,1.011,0,0,0,1.425,0A1,1,0,0,0,842.728,143.309Zm-9.187-3.3a4.507,4.507,0,1,1,4.532-4.507A4.519,4.519,0,0,1,833.541,140.011Z"
+                            transform="translate(-826.995 -128.994)" fill="#b2b9bd" />
+                    </svg>
+                </label>
             </div>
+
             <div class="header__socials">
                 <svg xmlns="http://www.w3.org/2000/svg" width="7.589" height="16.944" viewBox="0 0 7.589 16.944">
                     <path id="Facebook_Icon" data-name="Facebook Icon"
                         d="M895.672,129.063h-1.6a3.062,3.062,0,0,0-3.345,3.275v2.673h-2.271l.006,1.9h2.264l0,9.092H893V136.91h2.506l.535-1.9h-3.029v-2.745a.935.935,0,0,1,1.059-.926h1.59Z"
                         transform="translate(-888.453 -129.059)" fill="#b2b9bd" />
                 </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.023" height="12.997" viewBox="0 0 16.023 12.997">
+                    <path id="Twitter_Icon" data-name="Twitter Icon"
+                        d="M932.027,132.548a6.584,6.584,0,0,1-1.888.517,3.3,3.3,0,0,0,1.445-1.815,6.622,6.622,0,0,1-2.087.8,3.288,3.288,0,0,0-5.6,2.993,9.345,9.345,0,0,1-6.776-3.428,3.279,3.279,0,0,0,1.017,4.379,3.271,3.271,0,0,1-1.489-.411c0,.014,0,.027,0,.042a3.284,3.284,0,0,0,2.637,3.217,3.32,3.32,0,0,1-1.484.056,3.287,3.287,0,0,0,3.071,2.278,6.6,6.6,0,0,1-4.082,1.406,6.505,6.505,0,0,1-.784-.047,9.351,9.351,0,0,0,14.391-7.86c0-.142,0-.284-.009-.425A6.676,6.676,0,0,0,932.027,132.548Z"
+                        transform="translate(-916.004 -131.009)" fill="#b2b9bd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.028" height="16.032" viewBox="0 0 16.028 16.032">
+                    <path id="G_Icon_copy" data-name="G+ Icon copy"
+                        d="M948.982,142.959c0-2.7,1.915-3.574,4.675-3.574.3,0,.576-.007.861-.007a1.649,1.649,0,0,1-.683-1.233,1.993,1.993,0,0,1,.252-.923c-.149.01-.3.02-.46.02a3.4,3.4,0,0,1-3.587-3.577c0-1.948,2.009-3.694,4.418-3.694h4.749l-1.061,1.085H956.9a2.983,2.983,0,0,1,1.347,2.676,3.213,3.213,0,0,1-1.4,2.529c-.8.625-.954.886-.954,1.417,0,.453.958,1.127,1.4,1.456,1.534,1.147,1.822,1.868,1.844,3.3.029,1.905-1.934,3.568-5.08,3.568C951.295,146,948.982,144.749,948.982,142.959Zm1.93-.421c0,1.262,1.3,2.29,3.087,2.29,2.521,0,3.4-.963,3.4-2.227a1.247,1.247,0,0,0-.058-.446c-.608-1.514-2.567-1.514-3.22-1.514C952.364,140.642,950.912,141.3,950.912,142.538Zm1.054-8.773a2.892,2.892,0,0,0,2.579,2.682c1.214.035,1.913-.94,1.7-2.523s-1-2.772-2.215-2.809h-.056A2.172,2.172,0,0,0,951.966,133.764Zm10,1.234v-1.984H960v-1h1.969v-2.042h1.04v2.042h2v1h-2V135Z"
+                        transform="translate(-948.982 -129.969)" fill="#b2b9bd" />
+                </svg>
             </div>
+            <svg class="header__login" xmlns="http://www.w3.org/2000/svg" width="16.092" height="16.06"
+                viewBox="0 0 16.092 16.06">
+                <path id="Login_Icon" data-name="Login Icon"
+                    d="M1023.993,145.03h-14.029a1.031,1.031,0,0,1-1.031-1.031v-.594c0-.87,1.031-1.031,1.031-1.031l5.359-2.655a6.949,6.949,0,0,1-2.266-4.563v-2.577a4.1,4.1,0,0,1,4.125-3.609,3.818,3.818,0,0,1,3.843,3.609v2.577a6.7,6.7,0,0,1-2.245,4.573l5.214,2.645s1.031.177,1.031,1.031V144A1.031,1.031,0,0,1,1023.993,145.03Z"
+                    transform="translate(-1008.932 -128.969)" fill="#b2b9bd" />
+            </svg>
+
         </header>
     </div>
 
