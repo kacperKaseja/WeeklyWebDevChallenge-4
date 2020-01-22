@@ -19,6 +19,11 @@ body {
   width: 100%;
   max-width: 1024px;
   margin: 40px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
 }
 
 .header {
@@ -33,6 +38,7 @@ body {
           align-items: center;
   width: 100%;
   background: white;
+  grid-column: 1/-1;
 }
 
 .header__search {
