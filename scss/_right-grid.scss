@@ -1,0 +1,76 @@
+.right-grid {
+    grid-column: 3/span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    &__socials {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 40px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            a {
+                display: block;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: #475055;
+
+                svg {
+                    margin-right: 20px;
+                    ;
+                }
+            }
+
+
+        }
+    }
+
+    &__facebook {
+        grid-column: 2/-1;
+        grid-row: 1/2;
+        background-color: #4D6BAA;
+        @include like;
+    }
+
+    &__tweeter {
+        grid-column: 2/-1;
+        grid-row: 2/3;
+        background-color: #4FC6F8;
+        @include like;
+    }
+
+    &__sign-in {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        @include subscribe;
+
+    }
+
+    .sign-in__inner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        svg {
+            margin: 0 10px
+        }
+    }
+
+
+
+    &__newsletter {
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        @include subscribe;
+    }
+}
