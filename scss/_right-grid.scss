@@ -71,6 +71,33 @@
     &__newsletter {
         grid-column: 1/-1;
         grid-row: 4/5;
+        display: flex;
+
         @include subscribe;
+        padding: 10px 40px;
+
+        .sign-in__inner {
+            display: flex;
+            justify-content: space-between;
+
+            input[type="email"] {
+                width: 70%;
+                height: 45px;
+                padding: 5px 10px;
+                font-size: 1.7rem;
+            }
+
+            input[type="button"] {
+                width: 25%;
+                background-color: #EA6060;
+                text-transform: uppercase;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.7rem;
+            }
+        }
+
     }
+
 }
