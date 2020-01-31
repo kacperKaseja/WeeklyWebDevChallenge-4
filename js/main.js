@@ -13,4 +13,4 @@ const searchIco = document.querySelector('.header__search-ico path')
 //     searchIco.style.fill = "#56CCC8";
 // })
 
-searchInput.focus()
+// searchInput.focus()

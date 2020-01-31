@@ -24,6 +24,14 @@
             align-items: center;
             color: white;
 
+            a {
+                display: block;
+                display: flex;
+                align-items: center;
+                flex-grow: 1;
+                height: 62px;
+            }
+
             &:hover {
                 background: #56CCC8;
 
@@ -92,6 +100,7 @@
             border-bottom: 2px solid #263A54;
             flex: 1 1;
 
+
             &:hover {
                 svg {
                     transform: translateX(-20px) rotate(-180deg);
@@ -121,6 +130,10 @@
                     a {
                         color: white;
                         text-decoration: none;
+
+                        &:hover {
+                            color: #56CCC8
+                        }
                     }
                 }
             }
