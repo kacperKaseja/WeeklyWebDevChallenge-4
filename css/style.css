@@ -58,21 +58,36 @@ body {
           align-items: center;
   border-right: 1px solid gray;
   border-left: 1px solid gray;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   height: 60px;
-  padding: 0 25px;
 }
 
-.header__socials svg {
+.header__socials a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33.333333%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__socials a:hover {
+  background-color: #56CCC8;
   cursor: pointer;
 }
 
-.header__socials svg:hover {
+.header__socials a:hover svg {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-.header__socials svg path:hover {
-  fill: #56CCC8;
+.header__socials a:hover svg path {
+  fill: white;
 }
 
 .header__search {
@@ -87,6 +102,33 @@ body {
           align-items: center;
 }
 
+.header__search label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.header__search label:hover {
+  cursor: pointer;
+}
+
+.header__search label:hover svg {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.header__search label:hover svg path {
+  fill: #56CCC8;
+}
+
 .header__search-input {
   border: none;
   padding: 5px 10px;
@@ -94,16 +136,33 @@ body {
 }
 
 .header__login {
-  margin: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 60px;
+  border: none;
+  background: white;
 }
 
 .header__login:hover {
+  background-color: #56CCC8;
+  cursor: pointer;
+}
+
+.header__login:hover svg {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-.header__login path:hover {
-  fill: #56CCC8;
+.header__login:hover svg path {
+  fill: white;
 }
 
 .header__navigation {
@@ -296,7 +355,6 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  background-color: #152840;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,6 +373,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
+  background-color: #152840;
+}
+
+.side-menu__right .right__item:hover {
+  opacity: 0.95;
 }
 
 .side-menu__right .right__item:hover svg {
@@ -399,6 +462,66 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.right-grid__socials-item:nth-child(1) a:hover {
+  color: #4D6BAA;
+}
+
+.right-grid__socials-item:nth-child(1) a:hover svg ellipse {
+  fill: #4D6BAA;
+}
+
+.right-grid__socials-item:nth-child(1) a:hover svg path {
+  fill: white;
+}
+
+.right-grid__socials-item:nth-child(2) a:hover {
+  color: #4FC6F8;
+}
+
+.right-grid__socials-item:nth-child(2) a:hover svg ellipse {
+  fill: #4FC6F8;
+}
+
+.right-grid__socials-item:nth-child(2) a:hover svg path {
+  fill: white;
+}
+
+.right-grid__socials-item:nth-child(3) a:hover {
+  color: #EA6060;
+}
+
+.right-grid__socials-item:nth-child(3) a:hover svg ellipse {
+  fill: #EA6060;
+}
+
+.right-grid__socials-item:nth-child(3) a:hover svg path {
+  fill: white;
+}
+
+.right-grid__socials-item:nth-child(4) a:hover {
+  color: #f26522;
+}
+
+.right-grid__socials-item:nth-child(4) a:hover svg ellipse {
+  fill: #f26522;
+}
+
+.right-grid__socials-item:nth-child(4) a:hover svg path {
+  fill: white;
+}
+
+.right-grid__socials-item:nth-child(5) a:hover {
+  color: #e60023;
+}
+
+.right-grid__socials-item:nth-child(5) a:hover svg ellipse {
+  fill: #e60023;
+}
+
+.right-grid__socials-item:nth-child(5) a:hover svg path {
+  fill: white;
 }
 
 .right-grid__socials-item a {

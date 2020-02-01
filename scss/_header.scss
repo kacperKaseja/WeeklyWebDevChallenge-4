@@ -6,8 +6,6 @@
     background: white;
     grid-column: 1/-1;
 
-
-
     &__search {
         width: 25%;
     }
@@ -19,28 +17,40 @@
         align-items: center;
         border-right: 1px solid gray;
         border-left: 1px solid gray;
+        align-items: stretch;
         height: 60px;
-        padding: 0 25px;
 
-        svg {
-            cursor: pointer;
+        a {
+            display: flex;
+            width: 33.333333%;
+            // background-color: red;
+            justify-content: space-around;
+            align-items: center;
 
-            &:hover {
-                transform: scale(1.4);
-            }
-
-            path {
-                &:hover {
-                    fill: #56CCC8;
-                }
-            }
+            @include hover-header;
         }
     }
 
     &__search {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
+
+        label {
+            @include flex-center;
+            width: 40px;
+            height: 40px;
+
+            &:hover {
+                cursor: pointer;
+
+                svg {
+                    transform: scale(1.4);
+
+                    path {
+                        fill: #56CCC8;
+                    }
+                }
+            }
+        }
     }
 
     &__search-input {
@@ -50,20 +60,15 @@
     }
 
     &__login {
-        margin: 0 25px;
+        @include flex-center;
+        height: 60px;
+        width: 60px;
+        border: none;
+        background: white;
 
-        &:hover {
-            transform: scale(1.4);
-        }
-
-        path {
-            &:hover {
-                fill: #56CCC8;
-            }
-        }
+        @include hover-header;
     }
 }
-
 
 .header__navigation {
     display: flex;
@@ -102,9 +107,7 @@
 
 .navigation__list {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     justify-self: flex-start;
     align-self: flex-end;
     height: 60px;

@@ -1,8 +1,8 @@
-// const hamburger = document.querySelector('.header__hamburger')
+const hamburger = document.querySelector('.header__hamburger')
 
-// const hamburgerClick = function(){
-//     console.log("sdasda");
-// }
+const hamburgerClick = function () {
+    console.log("sdasda");
+}
 
 // hamburger.addEventListener('click', hamburgerClick);
 

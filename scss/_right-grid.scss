@@ -18,6 +18,26 @@
             display: flex;
             align-items: center;
 
+            &:nth-child(1) {
+                @include social-hover(#4D6BAA);
+            }
+
+            &:nth-child(2) {
+                @include social-hover(#4FC6F8);
+            }
+
+            &:nth-child(3) {
+                @include social-hover(#EA6060);
+            }
+
+            &:nth-child(4) {
+                @include social-hover(#f26522);
+            }
+
+            &:nth-child(5) {
+                @include social-hover(#e60023);
+            }
+
             a {
                 display: block;
                 display: flex;
@@ -25,11 +45,14 @@
                 text-decoration: none;
                 color: #475055;
 
+
                 svg {
                     margin-right: 20px;
-                    ;
+
                 }
             }
+
+
 
 
         }
@@ -66,8 +89,6 @@
         }
     }
 
-
-
     &__newsletter {
         grid-column: 1/-1;
         grid-row: 4/5;
@@ -97,7 +118,6 @@
                 font-size: 1.7rem;
             }
         }
-
     }
 
 }

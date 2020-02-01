@@ -68,3 +68,43 @@
         transform: scale(1.2);
     }
 }
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin hover-header {
+    &:hover {
+        background-color: #56CCC8;
+        cursor: pointer;
+
+        svg {
+            transform: scale(1.4);
+
+            path {
+                fill: white;
+            }
+        }
+    }
+}
+
+@mixin social-hover($color) {
+    a {
+        &:hover {
+            color: $color;
+
+            svg {
+                ellipse {
+                    fill: $color;
+
+                }
+
+                path {
+                    fill: white;
+                }
+            }
+        }
+    }
+}
