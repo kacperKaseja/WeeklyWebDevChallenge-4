@@ -334,6 +334,7 @@ body {
 
 .side-menu__contact svg {
   margin: 0 20px 0 10px;
+  width: 24px;
 }
 
 .side-menu__contact svg path {
@@ -342,6 +343,17 @@ body {
 
 .side-menu__contact p {
   color: white;
+}
+
+.side-menu__contact p a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.side-menu__contact p a:hover {
+  color: #3c7c7a;
 }
 
 .side-menu__contact .contact__item {
@@ -464,63 +476,113 @@ body {
           align-items: center;
 }
 
-.right-grid__socials-item:nth-child(1) a:hover {
+.right-grid__socials-item:nth-child(1) svg {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.right-grid__socials-item:nth-child(1):hover {
   color: #4D6BAA;
 }
 
-.right-grid__socials-item:nth-child(1) a:hover svg ellipse {
+.right-grid__socials-item:nth-child(1):hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.right-grid__socials-item:nth-child(1):hover svg ellipse {
   fill: #4D6BAA;
 }
 
-.right-grid__socials-item:nth-child(1) a:hover svg path {
+.right-grid__socials-item:nth-child(1):hover svg path {
   fill: white;
 }
 
-.right-grid__socials-item:nth-child(2) a:hover {
+.right-grid__socials-item:nth-child(2) svg {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.right-grid__socials-item:nth-child(2):hover {
   color: #4FC6F8;
 }
 
-.right-grid__socials-item:nth-child(2) a:hover svg ellipse {
+.right-grid__socials-item:nth-child(2):hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.right-grid__socials-item:nth-child(2):hover svg ellipse {
   fill: #4FC6F8;
 }
 
-.right-grid__socials-item:nth-child(2) a:hover svg path {
+.right-grid__socials-item:nth-child(2):hover svg path {
   fill: white;
 }
 
-.right-grid__socials-item:nth-child(3) a:hover {
+.right-grid__socials-item:nth-child(3) svg {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.right-grid__socials-item:nth-child(3):hover {
   color: #EA6060;
 }
 
-.right-grid__socials-item:nth-child(3) a:hover svg ellipse {
+.right-grid__socials-item:nth-child(3):hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.right-grid__socials-item:nth-child(3):hover svg ellipse {
   fill: #EA6060;
 }
 
-.right-grid__socials-item:nth-child(3) a:hover svg path {
+.right-grid__socials-item:nth-child(3):hover svg path {
   fill: white;
 }
 
-.right-grid__socials-item:nth-child(4) a:hover {
+.right-grid__socials-item:nth-child(4) svg {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.right-grid__socials-item:nth-child(4):hover {
   color: #f26522;
 }
 
-.right-grid__socials-item:nth-child(4) a:hover svg ellipse {
+.right-grid__socials-item:nth-child(4):hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.right-grid__socials-item:nth-child(4):hover svg ellipse {
   fill: #f26522;
 }
 
-.right-grid__socials-item:nth-child(4) a:hover svg path {
+.right-grid__socials-item:nth-child(4):hover svg path {
   fill: white;
 }
 
-.right-grid__socials-item:nth-child(5) a:hover {
+.right-grid__socials-item:nth-child(5) svg {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.right-grid__socials-item:nth-child(5):hover {
   color: #e60023;
 }
 
-.right-grid__socials-item:nth-child(5) a:hover svg ellipse {
+.right-grid__socials-item:nth-child(5):hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.right-grid__socials-item:nth-child(5):hover svg ellipse {
   fill: #e60023;
 }
 
-.right-grid__socials-item:nth-child(5) a:hover svg path {
+.right-grid__socials-item:nth-child(5):hover svg path {
   fill: white;
 }
 
@@ -600,10 +662,18 @@ body {
   border: none;
   color: white;
   font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.right-grid__facebook .fallow button:hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .right-grid__facebook .fallow button svg {
   margin-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .right-grid__tweeter {
@@ -666,10 +736,18 @@ body {
   border: none;
   color: white;
   font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.right-grid__tweeter .fallow button:hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .right-grid__tweeter .fallow button svg {
   margin-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .right-grid__sign-in {
@@ -715,6 +793,94 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.right-grid .sign-in__inner a:nth-child(1) svg {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.right-grid .sign-in__inner a:nth-child(1):hover {
+  color: #4D6BAA;
+}
+
+.right-grid .sign-in__inner a:nth-child(1):hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.right-grid .sign-in__inner a:nth-child(1):hover svg ellipse {
+  fill: #4D6BAA;
+}
+
+.right-grid .sign-in__inner a:nth-child(1):hover svg path {
+  fill: white;
+}
+
+.right-grid .sign-in__inner a:nth-child(2) svg {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.right-grid .sign-in__inner a:nth-child(2):hover {
+  color: #4FC6F8;
+}
+
+.right-grid .sign-in__inner a:nth-child(2):hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.right-grid .sign-in__inner a:nth-child(2):hover svg ellipse {
+  fill: #4FC6F8;
+}
+
+.right-grid .sign-in__inner a:nth-child(2):hover svg path {
+  fill: white;
+}
+
+.right-grid .sign-in__inner a:nth-child(3) svg {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.right-grid .sign-in__inner a:nth-child(3):hover {
+  color: #EA6060;
+}
+
+.right-grid .sign-in__inner a:nth-child(3):hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.right-grid .sign-in__inner a:nth-child(3):hover svg ellipse {
+  fill: #EA6060;
+}
+
+.right-grid .sign-in__inner a:nth-child(3):hover svg path {
+  fill: white;
+}
+
+.right-grid .sign-in__inner a:nth-child(4) svg {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.right-grid .sign-in__inner a:nth-child(4):hover {
+  color: #0e76a8;
+}
+
+.right-grid .sign-in__inner a:nth-child(4):hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.right-grid .sign-in__inner a:nth-child(4):hover svg ellipse {
+  fill: #0e76a8;
+}
+
+.right-grid .sign-in__inner a:nth-child(4):hover svg path {
+  fill: white;
 }
 
 .right-grid .sign-in__inner svg {
@@ -774,7 +940,7 @@ body {
   font-size: 1.7rem;
 }
 
-.right-grid__newsletter .sign-in__inner input[type="button"] {
+.right-grid__newsletter .sign-in__inner .button {
   width: 25%;
   background-color: #EA6060;
   text-transform: uppercase;
@@ -826,10 +992,12 @@ body {
 .slider__item h2 {
   font-size: 4.6rem;
   color: white;
+  text-shadow: 1px 1px 1px black;
   font-weight: 300;
 }
 
 .slider__item p {
+  text-shadow: 1px 1px 1px black;
   color: white;
   font-size: 1.4rem;
 }
@@ -844,6 +1012,10 @@ body {
   font-size: 1.6rem;
   color: white;
   padding: 5px 0;
+  text-shadow: 1px 1px 1px black;
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
+  cursor: pointer;
 }
 
 .slider__controler {
@@ -860,6 +1032,9 @@ body {
   border: 1px solid white;
   border-radius: 50%;
   margin: 3px;
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
+  cursor: pointer;
 }
 
 .slider__button {
@@ -873,6 +1048,7 @@ body {
           transform: translateY(-50%);
   border: none;
   border-radius: 0 5px 5px 0;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -45,16 +45,11 @@
                 text-decoration: none;
                 color: #475055;
 
-
                 svg {
                     margin-right: 20px;
 
                 }
             }
-
-
-
-
         }
     }
 
@@ -63,6 +58,7 @@
         grid-row: 1/2;
         background-color: #4D6BAA;
         @include like;
+
     }
 
     &__tweeter {
@@ -83,6 +79,25 @@
         width: 100%;
         display: flex;
         justify-content: center;
+
+        a:nth-child(1) {
+            @include social-hover(#4D6BAA);
+        }
+
+        a:nth-child(2) {
+            @include social-hover(#4FC6F8);
+        }
+
+        a:nth-child(3) {
+            @include social-hover(#EA6060);
+        }
+
+        a:nth-child(4) {
+            @include social-hover(#0e76a8);
+        }
+
+
+
 
         svg {
             margin: 0 10px
@@ -108,7 +123,7 @@
                 font-size: 1.7rem;
             }
 
-            input[type="button"] {
+            .button {
                 width: 25%;
                 background-color: #EA6060;
                 text-transform: uppercase;
