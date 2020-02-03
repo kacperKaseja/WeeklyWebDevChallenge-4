@@ -27,6 +27,8 @@ body {
 }
 
 .header {
+  max-width: 1100px;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,6 +172,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-right: auto;
+  overflow: hidden;
 }
 
 .navigation__hamburger {
@@ -179,6 +182,9 @@ body {
   position: relative;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
 }
 
 .navigation__hamburger span {
@@ -192,6 +198,8 @@ body {
   height: 3px;
   border-radius: 15px;
   background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navigation__hamburger span:nth-child(2) {
@@ -202,6 +210,20 @@ body {
 .navigation__hamburger span:nth-child(3) {
   -webkit-transform: translate(-50%, 8px);
           transform: translate(-50%, 8px);
+}
+
+.navigation__hamburger.open span:nth-child(1) {
+  opacity: 0;
+}
+
+.navigation__hamburger.open span:nth-child(2) {
+  -webkit-transform: translateX(-15px) rotate(45deg);
+          transform: translateX(-15px) rotate(45deg);
+}
+
+.navigation__hamburger.open span:nth-child(3) {
+  -webkit-transform: translateX(-15px) rotate(-45deg);
+          transform: translateX(-15px) rotate(-45deg);
 }
 
 .navigation__list {
@@ -220,6 +242,10 @@ body {
       align-self: flex-end;
   height: 60px;
   margin: 0 40px;
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navigation__list-item {
@@ -231,6 +257,11 @@ body {
 
 .navigation__list-item:hover {
   color: #56CCC8;
+}
+
+.navigation__list.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .side-menu {
@@ -970,7 +1001,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  background: url("https://picsum.photos/800") no-repeat center;
   background-size: cover;
 }
 
@@ -1048,7 +1078,6 @@ body {
           transform: translateY(-50%);
   border: none;
   border-radius: 0 5px 5px 0;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

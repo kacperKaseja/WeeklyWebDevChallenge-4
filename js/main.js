@@ -1,10 +1,12 @@
-const hamburger = document.querySelector('.header__hamburger')
+const hamburger = document.querySelector('.navigation__hamburger')
+const menu = document.querySelector('.navigation__list');
 
 const hamburgerClick = function () {
-    console.log("sdasda");
+    hamburger.classList.toggle('open');
+    menu.classList.toggle('open');
 }
 
-// hamburger.addEventListener('click', hamburgerClick);
+hamburger.addEventListener('click', hamburgerClick);
 
 const searchInput = document.querySelector('.header__search-input');
 const searchIco = document.querySelector('.header__search-ico path')
