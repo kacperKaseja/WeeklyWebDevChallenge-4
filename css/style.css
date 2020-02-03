@@ -1001,6 +1001,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  background: url("/1.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -1067,6 +1068,10 @@ body {
   cursor: pointer;
 }
 
+.slider__controler .controler__item.active {
+  background-color: white;
+}
+
 .slider__button {
   width: 30px;
   height: 50px;
@@ -1087,6 +1092,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .slider__button--next {
